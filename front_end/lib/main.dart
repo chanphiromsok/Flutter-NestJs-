@@ -74,7 +74,7 @@ class _HomeState extends State<Home> {
   }
 
   Future<User> inserUser(String body) async {
-    final api = 'http://192.168.1.103:3000/users';
+    final api = 'http://192.168.40.1:3000/users';
     var res = await http
         .post(api, body: body, headers: {'Content-Type': 'application/json'});
     print(res.statusCode);
